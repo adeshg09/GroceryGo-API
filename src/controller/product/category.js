@@ -1,5 +1,3 @@
-// Category Route: fetches products from all categories
-
 import Category from "../../model/category";
 
 export const getAllCategories = async (req, reply) => {
