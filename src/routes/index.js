@@ -1,7 +1,7 @@
 import fastify from "fastify";
-import { authRoutes } from "./auth";
-import { categoryRoutes, productRoutes } from "./products";
-import { orderRoutes } from "./order";
+import { authRoutes } from "./auth.js";
+import { categoryRoutes, productRoutes } from "./products.js";
+import { orderRoutes } from "./order.js";
 
 const prefix = "/api";
 
