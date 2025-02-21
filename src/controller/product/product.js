@@ -2,7 +2,7 @@
 
 import Product from "../../model/products.js";
 
-export const getProductsByCategory = async (req, reply) => {
+export const getProductsByCategoryId = async (req, reply) => {
   const { categoryId } = req.params;
   try {
     // try block fetches all the products from the category whose categoryId
