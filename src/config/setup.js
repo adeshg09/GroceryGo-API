@@ -13,7 +13,7 @@ export const admin = new AdminJS({
     {
       resource: Models.Customer,
       options: {
-        listProperties: ["phone", "role", "isActicated"],
+        listProperties: ["phone", "role", "isActivated"],
         filterProperties: ["phone", "role"],
       },
     },
@@ -21,16 +21,16 @@ export const admin = new AdminJS({
     {
       resource: Models.DeliveryPartner,
       options: {
-        listProperties: ["phone", "role", "isActicated"],
-        filterProperties: ["phone", "role"],
+        listProperties: ["email", "role", "isActivated"],
+        filterProperties: ["email", "role"],
       },
     },
 
     {
       resource: Models.Admin,
       options: {
-        listProperties: ["phone", "role", "isActicated"],
-        filterProperties: ["phone", "role"],
+        listProperties: ["email", "role", "isActivated"],
+        filterProperties: ["email", "role"],
       },
     },
     { resource: Models.Branch },
