@@ -17,7 +17,7 @@ sessionStore.on("error", (error) => {
   console.error("Session store error:", error);
 });
 
-export const autheticate = async (email, password) => {
+export const authenticate = async (email, password) => {
   if (email && password) {
     if (user.password === password) {
       return Promise.resolve({ email: email, password: password });
