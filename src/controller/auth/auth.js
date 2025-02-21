@@ -99,7 +99,7 @@ export const refreshToken = async (req, reply) => {
   }
 };
 
-export const fetchUSer = async (req, reply) => {
+export const fetchUser = async (req, reply) => {
   try {
     const { ueseId, role } = req.user;
     let user;

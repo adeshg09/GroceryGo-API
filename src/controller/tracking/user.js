@@ -1,6 +1,6 @@
 import { Customer, DeliveryPartner } from "../../model/index.js";
 
-export const updateUSer = async (req, reply) => {
+export const updateUser = async (req, reply) => {
   try {
     const { userId } = req.body;
     const updateData = req.body; // location that is to be updated afer being fetched from the body

@@ -1,4 +1,4 @@
-import { JsonWebTokenError } from "jsonwebtoken";
+import jwt from "jsonwebtoken";
 
 export const verifyToken = async (req, reply) => {
   try {
@@ -7,10 +7,7 @@ export const verifyToken = async (req, reply) => {
       return reply.status(401).send({ message: "Access token required." });
     }
     const token = authHeader.split(" ")[1];
-    const decoded = JsonWebTokenError.verify(
-      token,
-      process.env.ACCESS_TOKEN_SECRET
-    );
+    const decoded = jwt.verify(token, process.env.ACCESS_TOKEN_SECRET);
     req.user = decoded;
     return true;
   } catch (error) {
