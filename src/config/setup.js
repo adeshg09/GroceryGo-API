@@ -58,6 +58,7 @@ export const buildAdminRouter = async (app) => {
       cookiePassword: COOKIE_PASSWORD,
       cookieName: "adminjs",
     },
+
     app,
     {
       store: sessionStore,
